@@ -49,6 +49,8 @@ pip install torch==2.0.1 torchvision==0.15.2
 pip install httpx==0.24.1
 //https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/11855
 pip install gradio_client==0.2.7
+//https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/9136
+pip install rubbrband==0.2.19
 ```
 
 ### Using Python to Check PyTorch Environment

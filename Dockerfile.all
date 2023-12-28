@@ -1,0 +1,11 @@
+ARG IMAGE_TAG="latest"
+
+FROM zhiqiangwang/stable-diffusion-webui:${IMAGE_TAG}
+
+RUN pip install torch==2.0.1 torchvision==0.15.2
+# https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/13236
+RUN pip install httpx==0.24.1
+# https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/11855
+RUN pip install gradio_client==0.2.7
+# https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/9136
+RUN pip install rubbrband==0.2.19
