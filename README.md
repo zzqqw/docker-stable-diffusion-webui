@@ -3,6 +3,7 @@
 docker run -it --name sd-cpu --env CLI_ARGS="--skip-torch-cuda-test --use-cpu all --no-download-sd-model"  zhiqiangwang/stable-diffusion-webui:latest
 
 chmod -R 777  $(pwd)/sd
+chown -R 10000:10000 $(pwd)/sd
 docker run -it --name sd-gpu --rm  \
   --gpus all \
   -p 7860:7860 \
